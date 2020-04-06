@@ -6,21 +6,22 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
 
-Hello.defaultProps = {
-  name: 'David'
+export default class Hello extends React.Component {
+  
+  constructor(){
+    super();
+
+    this.propTypes =
+    {
+      name: PropTypes.string,
+      idade: PropTypes.number
+    }
+
+  }
+  
+
+  render(){
+  return <div>Hello {this.props.name} e sua idade {this.props.idade}!</div>
+  }
 }
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Hello name="React" />,
-    document.getElementById('app'),
-  )
-})

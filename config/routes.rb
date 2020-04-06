@@ -3,5 +3,12 @@ Rails.application.routes.draw do
 
   root "pagina_principal#index"
 
-  get 'sobre', to: 'pagina_principal#sobre';
+  get 'sobre', to: 'pagina_principal#sobre'
+
+  get 'linguagens', to: 'linguagens#index'
+
+  get 'linguagens/new', to: 'linguagens#new'
+  post 'linguagens/new', to: 'linguagens#create'
+
+  get 'linguagens/show', to: 'linguagens#show'
 end

@@ -1,0 +1,23 @@
+<div>
+    <%= form_with(model: linguagem, local: true)  do |f|%>
+
+    <div>
+        <%= f.label :nome, "Nome:" %>
+        <%= f.text_field :nome %>
+    </div>
+    <div>
+        <%= f.label :extensao, "Extensão:" %>
+        <%= f.text_field :nome %>
+    </div>
+    <div>
+        <%= f.label :descricao, "Descrição:" %>
+        <%= f.text_field :nome %>
+    </div>
+    <div>
+        <%= f.label :icone, "Imagem:" %>
+        <%= f.text_field :nome %>
+    </div>
+
+        <%= f.submit%>
+    <% end %>
+</div>

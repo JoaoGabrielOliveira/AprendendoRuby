@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <% @linguagens.each do |lin| %>
+            <li> <%= lin.nome %> <%= link_to "Mais detalhes", linguagens_show_path , coin %> </li>
+         <% end %>
+    </ul>
+</div>

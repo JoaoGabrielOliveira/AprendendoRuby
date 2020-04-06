@@ -1,2 +1,12 @@
 <%= javascript_pack_tag 'hello_react' %>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(
+    <Hello name="React" idade={5} />,
+    document.getElementById('app'),
+  )
+})
+
+</script>
 <div id="app"></div>
